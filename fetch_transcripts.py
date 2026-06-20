@@ -6,7 +6,6 @@ Saves each transcript as a clean markdown file in research/youtube-transcripts/
 
 from youtube_transcript_api import YouTubeTranscriptApi
 import os
-import re
 
 # Each entry: (filename-safe-slug, expert name, video title, video ID, source URL)
 VIDEOS = [
@@ -41,6 +40,14 @@ VIDEOS = [
     ("mike-king-link-building-evolution", "Mike King",
      "Michael King of iPullRank On How Link Building Has Changed (Or Not) Over The Years",
      "x_amBRClkDo", "https://www.youtube.com/watch?v=x_amBRClkDo"),
+
+    ("eli-schwartz-product-led-seo-ai-era", "Eli Schwartz",
+     "Product-Led SEO in AI Era with Eli Schwartz",
+     "x5CgYCRLgbc", "https://www.youtube.com/watch?v=x5CgYCRLgbc"),
+
+    ("aleyda-solis-traditional-seo-vs-ai-search", "Aleyda Solis",
+     "Traditional SEO vs AI Search Optimization (GEO, AEO) - #SEOFOMO TL;DR",
+     "-4cu882OJ8E", "https://www.youtube.com/watch?v=-4cu882OJ8E"),
 ]
 
 
@@ -86,8 +93,6 @@ def main():
         print("\nFailed (likely no captions available, or video is region/age-restricted):")
         for expert, title, url in failed:
             print(f"  - {expert}: {title}\n    {url}")
-        print("\nFor any failures, you may need to manually check if captions exist,")
-        print("or find an alternative video for that expert.")
 
 
 if __name__ == "__main__":
