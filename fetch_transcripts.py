@@ -1,6 +1,6 @@
 """
 Fetch YouTube transcripts for the 10 AI-powered SEO content production experts.
-Uses the free youtube-transcript-api library (no API key, no cost).
+Uses the free youtube-transcript-api library.
 Saves each transcript as a clean markdown file in research/youtube-transcripts/
 """
 
