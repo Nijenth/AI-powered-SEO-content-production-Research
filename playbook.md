@@ -1,6 +1,6 @@
----
-
 # AI-Powered SEO Content Production: Playbook & SOP
+
+---
 
 ## 1. Core Standard Operating Procedure (SOP)
 
